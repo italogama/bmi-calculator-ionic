@@ -1,0 +1,7 @@
+.strong{
+    font-weight: bold !important;
+    color: black;
+}
+.error{
+    color: red;
+}

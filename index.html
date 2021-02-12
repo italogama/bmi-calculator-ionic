@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="app.js" defer></script>
+    
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-title>
+                    BMI Calculator
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+            <ion-item>
+                <ion-label position="floating">Your Height (cm)</ion-label>
+                <ion-input id="height-input"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Your Weight (kg)</ion-label>
+                <ion-input id="weight-input"></ion-input>
+            </ion-item>
+
+            <ion-grid class="ion-text-center ion-margin-top">
+                <ion-row>
+                    <ion-col>
+                        <ion-button id="calc-btn">
+                            <ion-icon slot="start" name="calculator-outline"></ion-icon>
+                            Calculate
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button fill="outline" id="reset-btn">
+                            <ion-icon slot="start" name="refresh-outline"></ion-icon>
+                            Reset
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col id="result-div">
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-content>
+    </ion-app>
+</body>
+</html>
